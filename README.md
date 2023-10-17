@@ -1,4 +1,6 @@
-# Hi there 👋 I am Stefano, welcome to my profile page
+<img src="https://github-readme-stats.vercel.app/api?username=mangiucugna&show_icons=true" align="center"/>
+
+# Hi there 👋 I am Stefano
 
 My personal website: [www.stefanobaccianella.com](https://www.stefanobaccianella.com/)
 
@@ -10,6 +12,3 @@ My personal website: [www.stefanobaccianella.com](https://www.stefanobaccianella
 - [The myth of objectivity](https://www.stefanobaccianella.com/p/the-myth-of-objectivity)
 - [My templates](https://www.stefanobaccianella.com/p/my-templates)
 <!-- BLOGPOSTS:END -->
-
-<img src="https://github-readme-stats.vercel.app/api?username=mangiucugna&show_icons=true" align="center"/>
-
