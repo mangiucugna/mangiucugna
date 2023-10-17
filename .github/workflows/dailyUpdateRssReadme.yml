@@ -12,13 +12,13 @@ jobs:
     name: Update with latest blog posts
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
       - name: Get RSS Feed
         uses: kohrongying/readme-the-rss@master
         with:
           feed_url: https://www.stefanobaccianella.com/feed
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_TOKEN }}
       - name: Commit file changes
         run: |
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
