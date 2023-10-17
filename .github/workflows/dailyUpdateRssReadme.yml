@@ -5,12 +5,25 @@ on:
   #schedule:
     # Once a day at 9 AM
     #- cron: 0 9 * * *
+
   
 jobs:
-  update:
+  pull_blog_rss:
+    name: Update with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: JasonEtco/rss-to-readme@v1
+      - uses: actions/checkout@v2
+      - name: Get RSS Feed
+        uses: kohrongying/readme-the-rss@master
         with:
-          feed-url: https://www.stefanobaccianella.com/feed
-          readme-section: feed
+          feed_url: https://www.stefanobaccianella.com/feed
+      - name: Commit file changes
+        run: |
+            git config --global user.name 'Stefano Baccianella'
+            git config --global user.email 'github+actions@github.com'
+            git add .
+            git diff --quiet --cached || git commit -m "Update README"    
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
