@@ -12,18 +12,17 @@ jobs:
     name: Update with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Get RSS Feed
         uses: kohrongying/readme-the-rss@master
         with:
           feed_url: https://www.stefanobaccianella.com/feed
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
       - name: Commit file changes
         run: |
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add .
-            git diff --quiet --cached || git commit -m "Update README"    
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.REPO_TOKEN }}
+            git diff --quiet --cached || git commit -m "Update README"
+            git push
