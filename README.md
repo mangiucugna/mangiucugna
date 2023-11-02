@@ -6,9 +6,9 @@ My personal website: [www.stefanobaccianella.com](https://www.stefanobaccianella
 
 ## Latest articles from my publication
 <!-- BLOGPOSTS:START -->
+- [Temporary is a lie, everything lasts forever](https://www.stefanobaccianella.com/p/temporary-is-a-lie-everything-lasts)
 - [Promoting at random](https://www.stefanobaccianella.com/p/promoting-at-random)
 - [Science advances one funeral at a time](https://www.stefanobaccianella.com/p/science-advances-one-funeral-at-a)
 - [Let's pull the lever of the trolley](https://www.stefanobaccianella.com/p/lets-pull-the-lever-of-the-trolley)
 - [You don't need change management](https://www.stefanobaccianella.com/p/you-dont-need-change-management)
-- [The myth of objectivity](https://www.stefanobaccianella.com/p/the-myth-of-objectivity)
 <!-- BLOGPOSTS:END -->
